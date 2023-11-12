@@ -16,6 +16,7 @@ router.post(
     ],
     async (req, res) => {
         try {
+            console.log('Body:', req.body)
             const errors = validationResult(req)
             if (!errors.isEmpty()) {
                 return res.status(400).json({
@@ -28,7 +29,7 @@ router.post(
 
             const candidate = await User.findOne({email})
             if (candidate) {
-                return res.status(4000).json({message: 'The user with this email exists yet'})
+                return res.status(400).json({message: 'The user with this email exists yet'})
             }
 
             const hashedPassword = await bcrypt.hash(password, 12)
