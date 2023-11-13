@@ -1,5 +1,6 @@
 {
     "port": 6000,
     "jwtSecret": "mama myla ramu",
-    "mongoUri": "mongodb+srv://solsarok:lyeEQJiWdFIJ3pFh@cluster0.wnihzuf.mongodb.net/?retryWrites=true&w=majority"
+    "mongoUri": "mongodb+srv://solsarok:lyeEQJiWdFIJ3pFh@cluster0.wnihzuf.mongodb.net/?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:6000"
 }
