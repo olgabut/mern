@@ -1,4 +1,4 @@
-const {Router} = require('express')
+const { Router } = require('express')
 const config = require('config')
 const shortid = require('shortid')
 const Link = require('../models/Link')
@@ -50,4 +50,4 @@ router.get('/:id', auth, async (req, res) => {
     }
 })
 
-moduloe.exports = router
+module.exports = router
