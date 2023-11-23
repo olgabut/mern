@@ -1,16 +1,16 @@
-name: Deploy React App
-on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v4
-      - name: Install dependencies
-        run: |
-          npm ci
-          npm run client:install
-      - name: Build application
-        run: npm run client:build
-      - name: Deploy
-        run: echo Deploying...
+# name: Deploy React App
+# on: push
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Get repository code
+#         uses: actions/checkout@v4
+#       - name: Install dependencies
+#         run: |
+#           npm ci
+#           npm run client:install
+#       - name: Build application
+#         run: npm run client:build
+#       - name: Deploy
+#         run: echo Deploying...
