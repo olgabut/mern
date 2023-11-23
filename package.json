@@ -4,8 +4,8 @@
   "description": "MERN (Mongo, Express, React, Node)",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
-    "build": "npm run client:install && npm run client:build",
+    "start": "cross-env NODE_ENV=production PORT=8000 node app.js",
+    "heroku-postbuild": "npm run client:install && npm run client:build",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
     "client:install": "npm install --prefix client",

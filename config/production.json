@@ -1,7 +1,7 @@
 
 {
-    "port": 80,
+    "port": 8000,
     "jwtSecret": "mama myla ramu",
     "mongoUri": "mongodb+srv://solsarok:lyeEQJiWdFIJ3pFh@cluster0.wnihzuf.mongodb.net/?retryWrites=true&w=majority",
-    "baseUrl": "http://[domain-name]"
+    "baseUrl": "https://mernh-024857794e57.herokuapp.com"
 }
