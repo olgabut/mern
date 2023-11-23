@@ -16,6 +16,10 @@
     "type": "git",
     "url": "git+https://gitlab.com/solsarok/mern.git"
   },
+  "engines" : { 
+    "npm" : ">=9.0.0 <10.0.0",
+    "node" : ">=18.0.0 <19.0.0"
+  },
   "keywords": [
     "mongo",
     "express",
