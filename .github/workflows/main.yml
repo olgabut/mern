@@ -12,7 +12,7 @@ jobs:
       - name: Get repository code
         uses: actions/checkout@v2
       - name: Install dependencis
-        uses: |
+        run: |
           npm ci
           npm run client:install
           npm run client:build
